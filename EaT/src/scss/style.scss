@@ -1,0 +1,159 @@
+@import 'nullstyle.scss';
+
+@import 'fonts.scss';
+
+@import 'base.scss';
+
+
+
+
+.container{
+    width: 81%;
+    margin: 0 auto;
+
+    .header{
+        padding-top: 35px;
+    }
+
+
+    .nav-menu{
+        display: flex;
+        justify-content: space-between;
+        .text-nav{
+            font-size: 16px;
+            @extend %FontInter400;
+            color: #B8BECD;
+            padding-right: 35px;
+            &:hover{
+                color:#202336; 
+
+            }
+        }
+
+        
+
+        #Home{
+            @extend %FontInter500;
+            color: #202336;
+        }
+
+        .login-btn {
+            background: #fff;
+            border: 1px solid #FB8F1D;
+            border-radius: 8px;
+            margin-right: 18px;
+            width: 132px;
+            height: 44px;
+                a {
+                    color: #FB8F1D;
+                    font-size: 15px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+        }
+
+        .register-btn{
+            @extend %OrangeBtn;
+        }
+    }
+
+    .title-block{
+
+
+        display: flex;
+        flex-direction: column;
+        padding-top: 105px;
+        .main-title{
+            @extend %FontPlay700;
+            font-size: 64px;
+            color: #202336;
+            margin-bottom: 74px;
+        }
+
+        .form-name{
+            @extend %FontInter600;
+            font-size: 22px;
+            padding-bottom: 21px;
+            margin-bottom: 48px;
+            position: relative;
+            &:after {
+                content: '';
+                width: 32px;
+                height: 2px;
+                background: #202336;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+        }
+
+
+        .form-select{
+            .rectangle{
+                width: 220px;
+                height: 52px;
+                border: 0.8px solid  #AFB0B9;
+                border-radius: 6px;
+                margin-right: 30px;
+                margin-bottom: 35px;
+            }
+
+            .first-line{
+                display: flex;
+            }
+
+            .second-line{
+                display: flex;
+            }
+
+            .inform-text{
+                margin-top: 18px;
+                display: flex;
+                justify-content: space-between;
+                margin-right: 30px;
+                .Vector{
+                    margin-top: 5px;
+                    width: 9.5px;
+                    height: 6px;
+                }
+
+                .text-inf{
+                    @extend %FontInter400;
+                    font-size: 15px;
+                    padding-left: 31px;
+                    color: #000;
+                }
+            }
+        }
+
+        .explore-btn{
+            @extend %OrangeBtn;
+        }
+
+        .bg-pic{
+            position: absolute;
+            right: 15%;
+            top: 15%;
+        }
+
+        .circle-1{
+            position: absolute;
+            right: 55%;
+            top: 75%;
+        }
+
+        .circle-2{
+            position: absolute;
+            right: 95%;
+            top: 45%;
+        }
+
+        .x{
+            position: absolute;
+            right: 60%;
+            top: 20%; 
+        }
+    }
+
+}
